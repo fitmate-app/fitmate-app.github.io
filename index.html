@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <!-- Custom styles for this template -->
   <link href="scss/main.css" rel="stylesheet">
-
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="scss/mdb.min.css">
 </head>
 <body>
   <!-- Navigation -->
@@ -43,13 +44,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            <a class="nav-link js-scroll-trigger" href="#download">Telecharger</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            <a class="nav-link js-scroll-trigger" href="#features">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contacter</a>
           </li>
         </ul>
       </div>
@@ -62,8 +63,8 @@
         <div class="col-lg-6 my-auto">
           <div class="header-content mx-auto">
             <h1 class="mb-5"><span class="text-uppercase font-weight-bold">Fitmate</span>, un moyen plus facile de trouver votre partenaire de fitness.</h1>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Watch the video!</a>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Sign up for Free!</a>
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Regarder la video !</a>
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">S'inscrire gratuitement</a>
           </div>
         </div>
         <div class="col-lg-6 my-auto">
@@ -75,23 +76,30 @@
     </div>
   </div>
 
-  <div class="mastbody features bg-white pt-5 mb-5">
-    <div class="container">
+  
+  <div class="mastbody features">
+    <div class="container-fluid h-100">
       <!-- <div class="section-heading text-center mt-5 mb-5">
         <h2>Unlimited Features, Unlimited Fun</h2>
         <p class="text-muted">Check out what you can do with <span class="text-uppercase font-weight-bold">Fitmate</span>!</p>
         <hr>
       </div> -->
-      <div class="row h-100 animated slideInLeft delay-2s mb-4">
+      <div class="row h-100">
         <div class="col-lg-6 my-auto">
-          <div class="header-content mx-auto">
-            <h1 class="mb-5">1. Commencez par choisir vos préférences afin que Fitmate puisse vous proposer le compagnon idéal.</h1>
+          <div class="row h-100">
+            <div class="col-lg-4">
+              <h1 class="number text-right orange-text">1</h1>
+            </div>
+            <div class="col-lg-8 body-content mx-auto">
+              <h1 class="mb-5 ">Commencez par choisir vos préférences afin que Fitmate puisse vous proposer le compagnon
+                idéal.</h1>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 my-auto">
+        <div class="col-lg-6 color-block deep-orange my-auto py-4">
           <div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
+              <div class="device color-block deep-orange">
                 <div class="screen">
                   <img src="images/Settings.png" class="img-fluid" alt="">
                 </div>
@@ -100,33 +108,44 @@
           </div>
         </div>
       </div>
-      <div class="row h-100 animated slideInRight delay-2s mb-4">
-        <div class="col-lg-6 my-auto">
+      <div class="row h-100">
+        <div class="col-lg-6 color-block amber accent-3 my-auto py-4">
           <div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
+              <div class="device color-block amber accent-3">
                 <div class="screen">
                   <img src="images/Likes.png" class="img-fluid" alt="">
                 </div>
               </div>
             </div>
           </div>
-        </div><div class="col-lg-6 my-auto">
-          <div class="header-content mx-auto">
-            <h1 class="mb-5">2. Trouvez votre compagnon. Plus vous likez, plus vous augmentez vos chances.</h1>
+        </div>
+        <div class="col-lg-6 h-100 my-auto">
+          <div class="row h-100">
+            <div class="col-lg-4">
+              <h1 class="number text-right yellow-text">2</h1>
+            </div>
+          <div class="body-content mx-auto">
+            <h1 class="mb-5">Trouvez votre compagnon. Plus vous likez, plus vous augmentez vos chances.</h1>
           </div>
+        </div>
         </div>
       </div>
-      <div class="row h-100 animated slideInLeft delay-2s">
-        <div class="col-lg-6 my-auto">
-          <div class="header-content mx-auto">
-            <h1 class="mb-5">3. Enjoy your workout!</h1>
+      <div class="row h-100">
+        <div class="col-lg-6 h-100 my-auto">
+          <div class="row h-100">
+            <div class="col-lg-4">
+              <h1 class="number text-right blue-grey-text">3</h1>
+            </div>
+            <div class="body-content mx-auto">
+              <h1 class="mb-5">Amusez-vous !</h1>
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 my-auto">
+        <div class="col-lg-6  color-block mdb-color darken-3  my-auto py-4">
           <div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
-              <div class="device">
+              <div class="device color-block mdb-color darken-3 ">
                 <div class="screen">
                   <img src="images/Messages.png" class="img-fluid" alt="">
                 </div>
@@ -141,17 +160,17 @@
   <section class="cta">
     <div class="cta-content" id="download">
       <div class="container">
-        <h2>No more time to <span class="text-uppercase">waste!</span>  <br> Let's get fit!</h2>
+        <h2>Ne perdez plus le temps !</h2>
         <div class="badges">
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-outline btn-xl js-scroll-trigger" data-toggle="modal" data-target=".bd-example-modal-lg">Sign up now!</button>
+          <button type="button" class="btn btn-outline btn-xl js-scroll-trigger" data-toggle="modal" data-target=".bd-example-modal-lg">Inscrivez-vous !</button>
           
           <div class="modal fade bd-example-modal-lg" height="auto" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">  aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Fill the form bellow</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Remplssez le formulaire suivant :</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -196,7 +215,7 @@
   </section>
   <footer>
     <div class="container">
-      <p>&copy; Your Website 2019. All Rights Reserved.</p>
+      <p>&copy; Fitmate 2020. All Rights Reserved.</p>
       <ul class="list-inline">
         <li class="list-inline-item">
           <a href="#">Privacy</a>

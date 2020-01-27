@@ -364,6 +364,7 @@ section {
             h1 {
                 font-size: 50px;
             }
+            align-self: center;
         }
         .device-container {
             max-width: 325px;
@@ -596,3 +597,8 @@ footer {
 //   transform-origin: top left;
 //   white-space:nowrap;
 // }
+.number{
+    font-size: 20rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
