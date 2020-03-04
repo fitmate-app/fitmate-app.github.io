@@ -173,6 +173,13 @@
     }
 }
 
+@media (max-height: 400px) {
+
+    .form-title {
+        display: none;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 640px) {
   
 
