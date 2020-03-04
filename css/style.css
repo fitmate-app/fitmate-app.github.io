@@ -172,6 +172,11 @@ h6 { font-weight: 400 }
     height: 100%;
 }
 
+.mobile-screens {
+    width: 70%;
+    height: 70%;
+}
+
 /*preloader*/
 
 #preloader {
@@ -283,6 +288,8 @@ h6 { font-weight: 400 }
 #menu-logo img {
     display: block;
     margin: 30px auto 35px auto;
+    width: 70px;
+    height: 80px;
 }
 .sidr {
     display: none;
@@ -296,7 +303,7 @@ h6 { font-weight: 400 }
     overflow-y: auto;
     font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     font-size: 15px;
-    background: #1A8DBE;
+    background: #FFFFFF;
 }
 .sidr.right {
     left: auto;
@@ -337,7 +344,7 @@ h6 { font-weight: 400 }
     padding: 0 25px;
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #202d40;
     font-family: Open Sans;
     font-size: 13px;
     text-transform: uppercase;

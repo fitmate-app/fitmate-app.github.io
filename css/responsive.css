@@ -166,6 +166,13 @@
     }
 }
 
+@media (min-width: 870px) {
+
+    .mobile-screens {
+        display: none;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 640px) {
   
 
@@ -307,5 +314,9 @@
         max-width: 140px;
         margin-top: -130px;
         margin-right: -80px;
+    }
+
+    .screen-p {
+        display: none;
     }
 }
