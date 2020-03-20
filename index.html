@@ -33,12 +33,24 @@
 
 <body>
    <!-- PRELOADER -->
-   <div id="preloader"><img src="images/logo.png" alt=""></div>
+   <div id="preloader">
+      <picture>
+      <source type="image/webp" webp">
+      <source type="image/jpeg" srcset="">
+      <img src="images/logo.png" alt="">
+   </picture>
+   </div>
    <!-- MAIN NAV -->
    <a id="main-nav" href="#sidr"><span class="flaticon-menu9"></span></a>
    <div id="sidr" class="sidr">
       <!-- MAIN NAV LOGO -->
-      <a href="#" id="menu-logo"><img id="menu-logo-img" src="images/menu-logo.png" alt=""></a>
+      <a href="#" id="menu-logo">
+         <picture>
+         <source type="image/webp" webp">
+         <source type="image/jpeg" srcset="">
+         <img id="menu-logo-img" src="images/menu-logo.png" alt="">
+      </picture>
+      </a>
       <!-- MAIN NAV LINKS -->
       <ul>
          <li><a href="#Home"><span class="icons flaticon-house3"></span>Acceuil</a>
@@ -56,7 +68,13 @@
    <!-- PAGE LOGO -->
    <div class="wrap">
       <div id="logo">
-         <a href="#"><img src="images/logo.png" alt=""> </a>
+         <a href="#">
+            <picture>
+            <source type="image/webp" srcset="images/logo.webp">
+            <source type="image/jpeg" srcset="images/logo.png">
+            <img src="images/logo.png" alt="">
+         </picture>
+         </a>
       </div>
    </div>
    <!-- END PAGE LOGO -->
@@ -65,12 +83,42 @@
       <!-- RIGHT HAND & PHONE MOCK-UP IMAGES -->
       <div class="wrap">
          <div class="section-image">
-            <!-- Home IMAGE --><img src="images/accueilgris.png" alt="Home">
-            <!-- Video IMAGE --><img src="http://placehold.it/232x407" alt="Video">
-            <!-- Screen1 IMAGE --><img src="images/preferences-371-654.png" alt="Screen1">
-            <!-- Screen2 IMAGE --><img src="images/likes-371-654.png" alt="Screen2">
-            <!-- Screen3 IMAGE --><img src="images/messages.png" alt="Screen3">
-            <!-- Sign up IMAGE --><img src="http://placehold.it/232x407" alt="Sign up">
+            <!-- Home IMAGE -->
+            <picture>
+               <source type="image/webp" srcset="images/accueilgris.webp">
+               <source type="image/jpeg" srcset="images/accueilgris.png">
+               <img src="images/accueilgris.png" alt="Home">
+            </picture>
+            <!-- Video IMAGE -->
+            <picture>
+               <source type="image/webp" >
+               <source type="image/jpeg" srcset="">
+               <img src="http://placehold.it/232x407" alt="Video">
+            </picture>
+            <!-- Screen1 IMAGE -->
+            <picture>
+               <source type="image/webp" srcset="images/preferences-371-654.webp">
+               <source type="image/jpeg" srcset="images/preferences-371-654.png">
+               <img src="images/preferences-371-654.png" alt="Screen1">
+            </picture>
+            <!-- Screen2 IMAGE -->
+            <picture>
+               <source type="image/webp" srcset="images/likes-371-654.webp">
+               <source type="image/jpeg" srcset="images/likes-371-654.png">
+               <img src="images/likes-371-654.png" alt="Screen2">
+            </picture>
+            <!-- Screen3 IMAGE -->
+            <picture>
+               <source type="image/webp" srcset="images/messages.webp">
+               <source type="image/jpeg" srcset="images/messages.png">
+               <img src="images/messages.png" alt="Screen3">
+            </picture>
+            <!-- Sign up IMAGE -->
+            <picture>
+               <source type="image/webp" >
+               <source type="image/jpeg" srcset="">
+               <img src="http://placehold.it/232x407" alt="Sign up">
+            </picture>
          </div>
          <div id="hand"></div>
       </div>
@@ -113,7 +161,11 @@
             <div class="box">
                <h1>Choisissez votre partenaire sportif</h1>
                <p class="screen-p">Jetez votre dévolu sur les préférences qui vous réunirons avec votre fitmate de rêve...</p>
-               <img class="mobile-screens" src="images/preferences-371-654.png">
+               <picture>
+                  <source type="image/webp" srcset="images/preferences-371-654.webp">
+                  <source type="image/jpeg" srcset="images/preferences-371-654.png">
+                  <img class="mobile-screens" src="images/preferences-371-654.png">
+               </picture>
             </div>
          </div>
       </div>
@@ -124,7 +176,11 @@
             <div class="box">
                <h1>Un footing en binôme vous tente-t-il ? </h1>
                <p class="screen-p">Retrouvez votre acolyte grâce à FITMATE et partagez ce que vous avez de commun !</p>
-               <img class="mobile-screens" src="images/likes-371-654.png">
+               <picture>
+                  <source type="image/webp" srcset="images/likes-371-654.webp">
+                  <source type="image/jpeg" srcset="images/likes-371-654.png">
+                  <img class="mobile-screens" src="images/likes-371-654.png">
+               </picture>
             </div>
          </div>
       </div>
@@ -136,7 +192,11 @@
                <h1>Une messagerie instantanée</h1>
                <p class="screen-p">Échangez ensemble autour d’un sport qui vous passionne, reprogrammez votre prochain entraînement ou
                   peut-être votre randonnée pédestre à deux.</p>
-               <img class="mobile-screens" src="images/messages.png">
+               <picture>
+                  <source type="image/webp" srcset="images/messages.webp">
+                  <source type="image/jpeg" srcset="images/messages.png">
+                  <img class="mobile-screens" src="images/messages.png">
+               </picture>
             </div>
          </div>
       </div>
