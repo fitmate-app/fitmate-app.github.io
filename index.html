@@ -12,7 +12,7 @@
    <meta charset="UTF-8">
    <meta name="author" content="KeyDesign" />
    <meta name="description" content="fitmate - App Landing Page" />
-   <meta name="keywords" content="fitmate , Landing page, Template, App, Mobile, Android, iOS" />
+   <meta name="keywords" content="fitmate , partenaire de sport, randonée, sport, fitness" />
    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
    <!-- SITE TITLE -->
    <title>fitmate - App Landing Page</title>
@@ -34,6 +34,7 @@
    <link rel="stylesheet" type="text/css" href="css/style.css" />
    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css" />
    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+   <link rel="stylesheet" href="validation.min.css">
    <!-- JQUERY -->
    <script src="js/jquery.min.js"></script>
 </head>
@@ -220,24 +221,16 @@
                <p class="form-title">Notre application a été conçue, pour vous faire découvrir un concept qui sort de l’ordinaire. En
                   téléchargeant l’appli FITMATE, vivez une expérience 100% motivante !</p>
 
-                  <form class="jotform-form" action="https://submit.jotformeu.com/submit/200485804428052/" method="post" name="form_200485804428052" id="contact-form" accept-charset="utf-8" autocomplete="on">
-                     <input type="hidden" name="formID" value="200485804428052" />
-                     <input type="hidden" id="JWTContainer" value="" />
-                     <input type="hidden" id="cardinalOrderNumber" value="" />
-                     <input type="text" placeholder="Nom Complet" id="input_9" name="q9_nomComplet" data-type="input-textbox" class="validate[required]" size="20" value="" data-component="textbox" required="" />
-                     <input type="email" placeholder="Email" id="input_4" name="q4_email" class="validate[required, Email]" size="30" value="" data-component="email"  required="" />
-                     <input type="text" placeholder="Ville" id="input_8" name="q8_ville" data-type="input-textbox" size="20" value="" data-component="textbox" aria-labelledby="label_8" />
-                     <input type="number" placeholder="Âge" id="input_6" name="q6_age6" data-type="input-number" class=" form-number-input"  value="" data-component="number" aria-labelledby="label_6" />
-                     <textarea id="input_10" placeholder="Sports pratiqués"  class="form-textarea" name="q10_sportsPratiques" cols="40" rows="6" data-component="textarea" aria-labelledby="label_10"></textarea>
+                  <form id="contact-form">
+                     <input type="text" placeholder="Nom Complet" name="entry.2005620554">
+                     <input type="text" placeholder="Email" name="entry.1045781291">
+                     <input type="text" placeholder="Ville" name="entry.1065046570">
+                     <input type="text" placeholder="Âge" name="entry.1166974658">
+                     <textarea placeholder="Sports pratiqués" class="form-textarea" name="entry.839337160"></textarea>
                      <button id="input_2" type="submit" data-component="button" data-content="">
-                              Valider
-                            </button>
-                     <input type="hidden" id="simple_spc" name="simple_spc" value="200485804428052" />
-                     <script type="text/javascript">
-                     document.getElementById("si" + "mple" + "_spc").value = "200485804428052-200485804428052";
-                     </script>
-                   </form>
-                   <script type="text/javascript">JotForm.forwardToEu=true;</script>
+                        Valider
+                      </button>
+                  </form>
                   <!-- END SECTION CONTACT -->
             </div>
          </div>
@@ -249,7 +242,7 @@
    <div class="wrap">
       <div id="social-icons">
          <ul>
-            <li><a href=""><i class="flaticon-facebook6"></i></a> </li>
+            <li><a href="https:/www.facebook.com/fitmatestrongertogether"><i class="flaticon-facebook6"></i></a> </li>
             <li><a href=""><i class="flaticon-social19"></i></a> </li>
             <li><a href=""><i class="flaticon-google16"></i></a> </li>
             <li><a href=""><i class="flaticon-social40"></i></a> </li>
@@ -265,6 +258,29 @@
    <script src="js/cbpFWTabs.js"></script>
    <script src="js/jquery.sidr.min.js"></script>
    <script src="js/scripts.js"></script>
+   <script src="validation.min.js"></script>
+   <script>
+
+      $(document).ready(function(){
+          var form = $('#contact-form');
+          $('#input_2').click(function(e) {
+              // prevent form submission
+              e.preventDefault();
+      
+              // submit the form via Ajax
+              $.ajax({
+                  url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSehc9CMuShIoD5KnvexbvJ4zLHQTdcD6-IBY_DzEPNpNkBDBA/formResponse',
+                  type: 'POST',
+               headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded'
+               },
+                  data: form.serialize(),
+              });
+            window.location.href = "thankyou.html";
+          });
+      });
+
+   </script>
    <!--<script type="text/javascript" src="js/video.js"></script> -->
 </body>
 

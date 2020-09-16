@@ -101,6 +101,12 @@ h4,
 h5,
 h6 { font-weight: 400 }
 
+.myimg {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
 
 /*---------------------------------------
    LAYOUT          
@@ -163,6 +169,9 @@ h6 { font-weight: 400 }
     font-size: 15px;
     width: 51%;
 }
+.box .greetings{
+    margin: auto ;
+}
 .box p { margin: 15px 0 }
 .overlay {
     background: #202d40;
@@ -172,10 +181,23 @@ h6 { font-weight: 400 }
     height: 100%;
 }
 
+.logowrap{
+    display: flex; 
+    justify-content: center;
+}
 .mobile-screens {
     width: 70%;
     height: 70%;
 }
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
 /*preloader*/
 
@@ -735,6 +757,13 @@ h6 { font-weight: 400 }
 .simple-button .icon {
     margin-right: 20px;
     font-size: 18px;
+}
+
+.link
+{
+   color: #0645AD;
+   text-decoration: underline;
+   background-color: none;
 }
 
 
